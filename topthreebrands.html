@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Guitar Fans</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="topthreebrands.html">Top 3 Brands</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <Header>
+      <H1 class="text-center mt-4">Top 3 Brands of the month</H1>
+    </Header>
+      
+    <table class=" table table-striped mt-4">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Brand Name</th>
+          <th scope="col">No. of votes</th>
+          <th scope="col">Link to site</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Fender Guitars</td>
+          <td>55</td>
+          <td><a href="https://www.fender.com/">www.fender.com</a></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Ibanez Guitars</td>
+          <td>47</td>
+          <td><a href="https://www.ibanez.com/">www.ibanez.com</a></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Taylor Guitars</td>
+          <td>42</td>
+          <td><a href="https://www.taylorguitars.com/">www.taylorguitars.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <Header>
+      <H1 class="text-center mt-4 mb-4">Vote here for next months brands!</H1>
+    </Header>
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <form class="row gy-2 gx-3 align-items-center">
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Name">
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+            <div class="input-group">
+              <div class="input-group-text">@</div>
+              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected>Choose...</option>
+              <option value="1">Fender Guitars</option>
+              <option value="2">Ibanez Guitars</option>
+              <option value="3">Taylor Guitars</option>
+              <option value="4">Gibson Guitars</option>
+              <option value="5">Martin Guitars</option>
+              <option value="6">Jackson Guitars</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Vote</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+      
+    <h6 class="text-center mt-4">Reminder: You can only vote once. Thank you for voting!</h6>
+
+    <footer class="text-center">
+      <P>Guitar Fans &#128513;2023</P>
+    </footer>    
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
